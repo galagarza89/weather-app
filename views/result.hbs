@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  {{> head}}
+  <body>
+    <div class="container">
+        <a href="/"><h1 class="text-center">Get Weather <i class="fas fa-bolt"></i></h1></a>
+        {{> searchform}}
+        <div class="formOutput text-center">
+          <h1>{{location}}</h1>
+          <p>{{summary}}</p>
+          <div class="todayWeather">
+            <h2 class="text-center">Today's Weather:</h2>
+          </div>
+          <div class="row sunTimes">
+            <div class="col-xs-6">
+              <i class="fas fa-sun fa-2x"></i><span><i class="fas fa-arrow-up"></i></span>
+              <p>Sunrise: {{sunrise}}{{am}}</p>
+            </div>
+            <div class="col-xs-6">
+              <i class="fas fa-sun fa-2x"></i><span><i class="fas fa-arrow-down"></i></span>
+              <p>Sunset: {{sunset}}{{pm}}</p>
+            </div>
+          </div> <!-- end row sunrise/sunset -->
+          <div class="row">
+            <div class="currentTemp col-xs-6">
+              <h4>Current Temp:</h4>
+              <h2>{{currentTemp}}&ordm;</h2>
+        <!--       <p>feels like {{actualTemp}}&ordm;</p> -->
+            </div>
+              <div class="col-xs-6">
+                <h4>High: {{highTemp}}&ordm;</h4>
+                <h4>Low: {{lowTemp}}&ordm;</h4>
+              </div>
+          </div> <!-- end row temps -->
+          <div class="row rainChance">
+            <div class="col-xs-12">
+              <h4>Humidity:</h4>
+              <h3>{{humidity}}%</h3>
+            </div>
+          </div> <!-- end row rainChance -->
+        </div> <!-- end row formOutput -->
+
+    {{> footer}}
+    </div> <!-- end container -->
+  </body>
+</html>

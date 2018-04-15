@@ -1,0 +1,70 @@
+
+
+* {
+	box-sizing: border-box;
+}
+
+a, a:hover, a:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+.container-home {
+	margin-top: 100px;
+}
+
+.formInput {
+	margin-top: 25px;
+}
+
+form input[type=text] {
+	width: 275px;
+	margin: 0 auto;
+}
+
+.errorMessage {
+	margin: 5px auto;
+	color: red;
+	max-width: 400px;
+}
+
+.formOutput {
+	max-width: 400px;
+	margin: 0 auto;
+	border: 2px solid #000;
+	margin-top: 25px;
+}
+
+.formOutput div {
+	margin: 5px auto;
+}
+
+.todayWeather h2 {
+	margin-bottom: 25px;
+}
+
+.sunTimes {
+	margin-top: 10px;
+}
+
+.currentTemp h2, h4{
+	margin: 0;
+}
+
+
+.rainChance h3 {
+	margin: 5px auto;
+}
+
+.rainChance h4 {
+	margin: 7px auto;
+}
+
+footer {
+	margin-top: 40px;
+}
+
+
+
+
+
