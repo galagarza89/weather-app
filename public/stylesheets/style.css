@@ -19,7 +19,7 @@ a, a:hover, a:visited {
 
 form input[type=text] {
 	width: 275px;
-	margin: 0 auto;
+	margin: 0 auto 20px;
 }
 
 .errorMessage {
